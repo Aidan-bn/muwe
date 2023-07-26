@@ -16,7 +16,7 @@ function App() {
         </div>
       </div>
       <Contact />
-      <Interact />
+      {/* <Interact /> */}
     </>
   );
 }

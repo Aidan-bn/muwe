@@ -1,6 +1,13 @@
 import '../css/contact.css';
+import Interact from './Interact';
+import useRemoveOvelay from './useRemoveOverlay';
+import {useRef, useState} from 'react';
 
 const Contact  = () => {
+    const [openOverlay, setOpenOverlay] = useState(false);
+    const ref = useRef();
+    useRemoveOvelay(ref, openOverlay, () => setOpenOverlay(false));
+
     return (
         <div className="contact">
             <div className="contact-info">
@@ -13,7 +20,13 @@ const Contact  = () => {
                         to request a service from a doctors
                     </p>
                     <ul>
-                        <li>Subcribe</li>
+                        <li onClick={() => setOpenOverlay(true)}>Subcribe</li>
+                        {openOverlay && (
+                            <div className='popup'>
+                                <Interact />
+                                <span onClick={() => setOpenOverlay(false)} className='btn-close'>Close</span>
+                            </div>
+                        )}
                     </ul>
                 </aside>
                 <form>
@@ -33,7 +46,7 @@ const Contact  = () => {
                         Prescription:
                         <input type="file" name="prescription"/>
                     </label>
-                    <button className='send-btn'>Send</button>
+                    <button className='send-btn' >Send</button>
                 </form>
             </div>
         </div>
