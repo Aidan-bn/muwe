@@ -19,9 +19,9 @@ nav > h1 {
 }
 
 .nav-div > menu {
-    position: absolute;
-    top: 45px;
-    right: -21px;
+    position: fixed;
+    top: 60px;
+    right: 25px;
     text-align: center;
     gap: 8px;
     list-style: none;
@@ -42,7 +42,8 @@ nav > h1 {
 
 .hamburger {
     background-color: #800080;
-    width: 40px;
+    width: 35px;
+    cursor: pointer;
 }
 
 .nav-div > .desktop-menu{
