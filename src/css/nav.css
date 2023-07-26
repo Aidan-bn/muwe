@@ -1,0 +1,32 @@
+nav {
+    width: 80vw;
+    height: 7vh;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+nav > menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger {
+    background-color: #800080;
+    width: 40px;
+}
+
+@media screen and (min-width: 576px) {
+    
+    
+}
