@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import doctor from './assets/dr.png';
 import Contact from './components/Contact';
-import Interact from './components/Interact';
+//import Interact from './components/Interact';
 
 function App() {
   return (
