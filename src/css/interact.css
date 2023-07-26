@@ -1,0 +1,47 @@
+.interact {
+    background: #f8eeec55;
+    /* padding: 50px; */
+    position: relative;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.user-box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 18%;
+    left: 10%;
+    width: 80vw;
+}
+
+.register, .login {
+    width: 100%;
+}
+
+.login {
+    display: none;
+}
+
+.register {
+    display: none;
+}
+
+fieldset {
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid #00C2FF;
+}
+
+legend {
+    color: #800080;
+    padding: 0 4px;
+    font-weight: 500;
+    text-align: left;
+}
+
+aside > form {
+    background-color: #ffffff;
+    border-radius: 9px;
+}
