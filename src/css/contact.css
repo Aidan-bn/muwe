@@ -5,7 +5,6 @@
 .contact-info {
     width: 80vw;
     margin: auto;
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -14,7 +13,6 @@
 
 aside {
     text-align: center;
-    /* margin: auto; */
 }
 
 aside > h1 {
@@ -121,7 +119,6 @@ input, textarea {
     }
     
     .btn-close {
-        /* right: 49%; */
         top: 89%;
     }
 }
