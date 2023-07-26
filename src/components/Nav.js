@@ -7,9 +7,6 @@ const Nav = () => {
     const [useMenu, setUseMenu] = useState(false);
     const ref = useRef();
     useRemoveOverlay(ref, useMenu, () => setUseMenu(false));
-    // const hamburger = () => {
-    //     alert("Hamburger clicked few sec ago")
-    // }
 
     return (
         <nav>
